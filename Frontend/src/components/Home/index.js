@@ -15,7 +15,7 @@ const Home = () => {
       setIsLoading(true)
       setError(null)
       try {
-        const response = await fetch('https://niroggyan-assignment-backend.onrender.com/specialization_list/')
+        const response = await fetch('https://niroggyan-assignment.onrender.com/specialization_list/')
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`)
         }
