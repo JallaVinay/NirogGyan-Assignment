@@ -33,7 +33,7 @@ const DoctorDetails = () => {
       setLoadingDoctor(true)
       setErrorDoctor(null)
       try {
-        const response = await fetch(`https://niroggyan-assignment-backend.onrender.com/doctorDetails/${doctorId}`)
+        const response = await fetch(`https://niroggyan-assignment.onrender.com/doctorDetails/${doctorId}`)
         if (!response.ok) throw new Error("Failed to fetch doctor details")
         const data = await response.json()
         setDoctor(data)
@@ -51,7 +51,7 @@ const DoctorDetails = () => {
       setLoadingSlots(true)
       setErrorSlots(null)
       try {
-        const response = await fetch(`https://niroggyan-assignment-backend.onrender.com/doctorAvailability/${doctorId}`)
+        const response = await fetch(`https://niroggyan-assignment.onrender.com/doctorAvailability/${doctorId}`)
         if (!response.ok) throw new Error("Failed to fetch availability slots")
         const data = await response.json()
         setSlots(data)
