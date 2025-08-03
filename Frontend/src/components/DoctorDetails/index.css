@@ -1,0 +1,180 @@
+/* Container for the whole details section */
+.details-doctor-details-container {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+/* Main details card */
+.details-doctor-details {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  padding: 24px 32px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Doctor's name */
+.details-doctor-name {
+  font-size: 2.2rem;
+  margin-bottom: 8px;
+  color: #1e3a8a;
+  font-weight: 700;
+}
+
+/* Fields like Bio, Qualifications, etc. */
+.doctor-field {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #444;
+}
+
+/* Section title for slots */
+.section-title {
+  font-size: 1.5rem;
+  color: #1e40af;
+  margin-top: 32px;
+  border-bottom: 2px solid #3b82f6;
+  padding-bottom: 6px;
+  font-weight: 600;
+}
+
+/* Availability info above the slots */
+.availability-info p {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #2563eb;
+  margin-bottom: 12px;
+}
+
+/* Slots list styling */
+.slots-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+/* Each slot item */
+.slot {
+  background: #f9fafb;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 14px 20px;
+  flex: 1 1 48%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  color: #1e293b;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.slot:hover {
+  box-shadow: 0 4px 10px rgb(0 0 0 / 0.15);
+}
+
+/* Confirm slot button */
+.btn.confirm-slot {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn.confirm-slot:hover {
+  background-color: #1e40af;
+}
+
+/* Modal background overlay */
+.modal-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(30, 41, 59, 0.7); /* Dark blue overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Modal box */
+.modal-box {
+  background: white;
+  padding: 30px 40px;
+  border-radius: 14px;
+  max-width: 360px;
+  width: 90%;
+  box-shadow: 0 12px 32px rgba(30, 41, 59, 0.25);
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Modal title */
+.modal-box h2 {
+  margin-bottom: 20px;
+  font-size: 1.6rem;
+  color: #2563eb;
+  font-weight: 700;
+}
+
+/* Modal paragraph */
+.modal-box p {
+  font-size: 1rem;
+  margin-bottom: 12px;
+  color: #334155;
+}
+
+/* Modal buttons container */
+.modal-buttons {
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+}
+
+/* OK button in modal */
+.btn.btn-ok {
+  background-color: #2563eb;
+  color: white;
+  padding: 10px 28px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn.btn-ok:hover {
+  background-color: #1e40af;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 480px) {
+  .slots-list {
+    flex-direction: column;
+  }
+
+  .slot {
+    flex: 1 1 100%;
+  }
+
+  .details-doctor-details {
+    padding: 20px;
+  }
+}

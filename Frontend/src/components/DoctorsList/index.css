@@ -1,0 +1,10 @@
+.doctors-list {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  padding: 20px;
+  min-height: 100vh;
+  margin: 0;
+}
