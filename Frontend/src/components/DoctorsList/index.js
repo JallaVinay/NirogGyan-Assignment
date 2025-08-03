@@ -12,7 +12,7 @@ const DoctorsList = ({ searchQuery, specialization }) => {
       setIsLoading(true)
       setError(null)
       try {
-        const url = `https://niroggyan-assignment-backend.onrender.com/doctors_list?search_q=${searchQuery}&specialization=${specialization}`
+        const url = `https://niroggyan-assignment.onrender.com/doctors_list?search_q=${searchQuery}&specialization=${specialization}`
         const response = await fetch(url)
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`)
